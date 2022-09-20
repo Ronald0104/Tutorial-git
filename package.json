@@ -2,13 +2,15 @@
   "name": "tutorial-git",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --emptyOutDir",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^3.0.7"
+    "autoprefixer": "^10.4.8",
+    "sass": "^1.54.8",
+    "vite": "^3.0.7",
+    "vite-plugin-nunjucks": "^0.1.10"
   }
 }

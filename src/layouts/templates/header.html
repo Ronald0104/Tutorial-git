@@ -1,10 +1,10 @@
-{% extends "src/html/layout.html" %}
-{% include "src/html/hello.html"  %}
 
-{% block content %}
+<header>
+    <h1><a href="/">HRO SOLUTIONS</a></h1>    
+
     {% if username %}
         Username: {{ username }}
     {% else %}
         Variable <code>username</code> is missing
     {% endif %}
-{% endblock %}
+</header>

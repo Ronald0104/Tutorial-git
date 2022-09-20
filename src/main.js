@@ -1,7 +1,6 @@
-// import './style.css'
-import './src/sass/style.scss'
-import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import './assets/sass/style.scss'
+import { setupCounter } from './assets/js/counter.js'
+import javascriptLogo from '../javascript.svg'
 
 // document.querySelector('#app').innerHTML = `
 //   <div>
@@ -22,8 +21,12 @@ import { setupCounter } from './counter.js'
 // `
 
 document.querySelector('#app').innerHTML = `
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
+</a>
 <div class="card">
-<button id="counter" type="button"></button>
+    <button id="counter" type="button"></button>
 </div>
+<section id="galeria"></section>
 `;
 setupCounter(document.querySelector('#counter'));
